@@ -1,0 +1,75 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Lear"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"lscovidazureblob_connectionString": {
+			"value": ""
+		},
+		"lscoviddatalake_accountKey": {
+			"value": ""
+		},
+		"lshttpdatalakesink_accountKey": {
+			"value": ""
+		},
+		"ls_dummy_connectionString": {
+			"value": ""
+		},
+		"ls_Azure_dynamicSink_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage3_connectionString": {
+			"value": ""
+		},
+		"lsJSonIndex_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage4_connectionString": {
+			"value": ""
+		},
+		"lstextToExcel_connectionString": {
+			"value": ""
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://azkeyvaultlearningdemo.vault.azure.net/"
+		},
+		"AzureBlobSwith KeyVault_properties_typeProperties_connectionString_secretName": {
+			"value": "azkeyvaultlearningdemo"
+		},
+		"lscoviddatalake_properties_typeProperties_url": {
+			"value": "https://coviddatalakeanalyze.dfs.core.windows.net"
+		},
+		"lshttpdatalakesink_properties_typeProperties_url": {
+			"value": "https://coviddatalakeanalyze.dfs.core.windows.net"
+		},
+		"lshttpsource_properties_typeProperties_url": {
+			"value": "@{linkedService().BaseURL}"
+		},
+		"ls_parameter_properties_typeProperties_url": {
+			"value": "@{linkedService().baseSourceURL}"
+		},
+		"ls_http_dynamic_properties_typeProperties_url": {
+			"value": "@{linkedService().SourceBaseURL}"
+		},
+		"tr-covid-population_properties_typeProperties_scope": {
+			"value": "/subscriptions/8b249ea7-9a9b-476b-99cf-a87463fe3100/resourceGroups/AzureLearningDemo/providers/Microsoft.Storage/storageAccounts/azurelearningsstorage"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
