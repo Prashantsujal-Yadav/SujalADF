@@ -11,81 +11,13 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
-		"lscovidazureblob_connectionString": {
+		"AzureDataLakeStorage1_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'lscovidazureblob'"
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
-		"lscoviddatalake_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'lscoviddatalake'"
-		},
-		"lshttpdatalakesink_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'lshttpdatalakesink'"
-		},
-		"ls_dummy_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ls_dummy'"
-		},
-		"ls_Azure_dynamicSink_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ls_Azure_dynamicSink'"
-		},
-		"AzureBlobStorage2_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage2'"
-		},
-		"AzureBlobStorage3_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage3'"
-		},
-		"lsJSonIndex_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'lsJSonIndex'"
-		},
-		"AzureSqlDatabase1_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
-		},
-		"AzureBlobStorage4_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage4'"
-		},
-		"lstextToExcel_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'lstextToExcel'"
-		},
-		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://azkeyvaultlearningdemo.vault.azure.net/"
-		},
-		"AzureBlobSwith KeyVault_properties_typeProperties_connectionString_secretName": {
-			"type": "string",
-			"defaultValue": "azkeyvaultlearningdemo"
-		},
-		"lscoviddatalake_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://coviddatalakeanalyze.dfs.core.windows.net"
-		},
-		"lshttpdatalakesink_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://coviddatalakeanalyze.dfs.core.windows.net"
-		},
-		"lshttpsource_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "@{linkedService().BaseURL}"
-		},
-		"ls_parameter_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "@{linkedService().baseSourceURL}"
-		},
-		"ls_http_dynamic_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "@{linkedService().SourceBaseURL}"
-		},
-		"tr-covid-population_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/8b249ea7-9a9b-476b-99cf-a87463fe3100/resourceGroups/AzureLearningDemo/providers/Microsoft.Storage/storageAccounts/azurelearningsstorage"
+			"defaultValue": "https://azurelearningsstorage.dfs.core.windows.net"
 		},
 		"containerUri": {
 			"type": "string",
@@ -117,106 +49,15 @@
 					"AzureBlobStorage1_connectionString": {
 						"value": "[parameters('AzureBlobStorage1_connectionString')]"
 					},
-					"lscovidazureblob_connectionString": {
-						"value": "[parameters('lscovidazureblob_connectionString')]"
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
 					},
-					"lscoviddatalake_accountKey": {
-						"value": "[parameters('lscoviddatalake_accountKey')]"
-					},
-					"lshttpdatalakesink_accountKey": {
-						"value": "[parameters('lshttpdatalakesink_accountKey')]"
-					},
-					"ls_dummy_connectionString": {
-						"value": "[parameters('ls_dummy_connectionString')]"
-					},
-					"ls_Azure_dynamicSink_connectionString": {
-						"value": "[parameters('ls_Azure_dynamicSink_connectionString')]"
-					},
-					"AzureBlobStorage2_connectionString": {
-						"value": "[parameters('AzureBlobStorage2_connectionString')]"
-					},
-					"AzureBlobStorage3_connectionString": {
-						"value": "[parameters('AzureBlobStorage3_connectionString')]"
-					},
-					"lsJSonIndex_connectionString": {
-						"value": "[parameters('lsJSonIndex_connectionString')]"
-					},
-					"AzureSqlDatabase1_connectionString": {
-						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
-					},
-					"AzureBlobStorage4_connectionString": {
-						"value": "[parameters('AzureBlobStorage4_connectionString')]"
-					},
-					"lstextToExcel_connectionString": {
-						"value": "[parameters('lstextToExcel_connectionString')]"
-					},
-					"AzureKeyVault1_properties_typeProperties_baseUrl": {
-						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
-					},
-					"lscoviddatalake_properties_typeProperties_url": {
-						"value": "[parameters('lscoviddatalake_properties_typeProperties_url')]"
-					},
-					"lshttpdatalakesink_properties_typeProperties_url": {
-						"value": "[parameters('lshttpdatalakesink_properties_typeProperties_url')]"
-					},
-					"lshttpsource_properties_typeProperties_url": {
-						"value": "[parameters('lshttpsource_properties_typeProperties_url')]"
-					},
-					"ls_parameter_properties_typeProperties_url": {
-						"value": "[parameters('ls_parameter_properties_typeProperties_url')]"
-					},
-					"ls_http_dynamic_properties_typeProperties_url": {
-						"value": "[parameters('ls_http_dynamic_properties_typeProperties_url')]"
-					},
-					"AzureBlobSwith KeyVault_properties_typeProperties_connectionString_secretName": {
-						"value": "[parameters('AzureBlobSwith KeyVault_properties_typeProperties_connectionString_secretName')]"
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					}
 				}
 			},
 			"dependsOn": []
-		},
-		{
-			"name": "Lear_ArmTemplate_1",
-			"type": "Microsoft.Resources/deployments",
-			"apiVersion": "2018-02-01",
-			"properties": {
-				"mode": "incremental",
-				"templateLink": {
-					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
-					"contentVersion": "1.0.0.0"
-				},
-				"parameters": {
-					"factoryName": {
-						"value": "[parameters('factoryName')]"
-					}
-				}
-			},
-			"dependsOn": [
-				"[resourceId('Microsoft.Resources/deployments', 'Lear_ArmTemplate_0')]"
-			]
-		},
-		{
-			"name": "Lear_ArmTemplate_2",
-			"type": "Microsoft.Resources/deployments",
-			"apiVersion": "2018-02-01",
-			"properties": {
-				"mode": "incremental",
-				"templateLink": {
-					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
-					"contentVersion": "1.0.0.0"
-				},
-				"parameters": {
-					"factoryName": {
-						"value": "[parameters('factoryName')]"
-					},
-					"tr-covid-population_properties_typeProperties_scope": {
-						"value": "[parameters('tr-covid-population_properties_typeProperties_scope')]"
-					}
-				}
-			},
-			"dependsOn": [
-				"[resourceId('Microsoft.Resources/deployments', 'Lear_ArmTemplate_1')]"
-			]
 		}
 	]
 }
