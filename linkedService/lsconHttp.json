@@ -4,16 +4,13 @@
 		"parameters": {
 			"BaseURL": {
 				"type": "string"
-			},
-			"RelativeURL": {
-				"type": "string"
 			}
 		},
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
 			"url": "@{linkedService().BaseURL}",
-			"enableServerCertificateValidation": false,
+			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
 	}
