@@ -4,6 +4,9 @@
 		"parameters": {
 			"BaseURL": {
 				"type": "string"
+			},
+			"RelativeURL": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
