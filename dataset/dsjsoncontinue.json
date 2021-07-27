@@ -1,0 +1,32 @@
+{
+	"name": "dsjsoncontinue",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lscontinue",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "ECDC_file_data.json",
+				"container": "covidstudyblobcontainer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"sourceBaseURL": {
+					"type": "string"
+				},
+				"sourceRelativeURL": {
+					"type": "string"
+				},
+				"sinkFileName": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
