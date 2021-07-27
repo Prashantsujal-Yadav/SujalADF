@@ -1,0 +1,38 @@
+{
+	"name": "dsgrow",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsconHttp",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"BaseURL": {
+					"value": "@dataset().SourceURL",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"SourceURL": {
+				"type": "string"
+			},
+			"RelativeURL": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().RelativeURL",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
