@@ -15,9 +15,21 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
+		"lscontinue_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'lscontinue'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://azurelearningsstorage.dfs.core.windows.net"
+		},
+		"lsconHttp_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "@{linkedService().BaseURL}"
+		},
+		"lscontinue2_sasUri": {
+			"type": "secureString",
+			"metadata": "Secure string for 'sasUri' of 'lscontinue2'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -52,8 +64,17 @@
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
 					},
+					"lscontinue_connectionString": {
+						"value": "[parameters('lscontinue_connectionString')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"lsconHttp_properties_typeProperties_url": {
+						"value": "[parameters('lsconHttp_properties_typeProperties_url')]"
+					},
+					"lscontinue2_sasUri": {
+						"value": "[parameters('lscontinue2_sasUri')]"
 					}
 				}
 			},

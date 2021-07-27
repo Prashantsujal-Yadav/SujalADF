@@ -11,8 +11,17 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"lscontinue_connectionString": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://azurelearningsstorage.dfs.core.windows.net"
+		},
+		"lsconHttp_properties_typeProperties_url": {
+			"value": "@{linkedService().BaseURL}"
+		},
+		"lscontinue2_sasUri": {
+			"value": ""
 		},
 		"containerUri": {
 			"value": ""
